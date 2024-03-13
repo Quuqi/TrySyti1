@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Pattaya&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&family=Pacifico&family=Pattaya&family=Roboto+Slab:wght@100..900&display=swap');
+body{
+	background: linear-gradient( #7FFFD4 ,#1E90FF , #7B68EE );
+}
+header{
+	background-color: #B0C4DE;
+	height: 270px;
+}
+.bgvideo{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bgvideo video{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	z-index: 1;
+}
+.i1{
+	color: #FFA07A;
+	text-align: center;
+	font-size: 5vw;
+	font-family: "Pacifico", cursive;
+	z-index: 2;
+}
+
+
+/* Навігація */	
+.star1{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+.star1 video{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	z-index: 1;
+}
+.bu{
+	z-index: 2;
+}
+ul{
+	list-style: none;
+}
+
+
+nav,aside{
+	width: 20%;
+	float: left;
+}
+main{
+	background: radial-gradient(#FF7F50, #DAA520, #FF4500);
+	width: 60%;
+    float: left;
+}
+nav{
+	background-color: #F0E68C;
+	height: 2397px;
+}
+h2{
+	text-align: center;
+	font-size: 50px;
+	font-family: "Pattaya", sans-serif;
+	
+}
+article{
+	font-size: 18px;
+	font-style: italic;
+	text-align: justify;
+	border: dashed 2px red;
+	width: 850px;
+	height: 350px;
+	margin: 10px 50px 80px 0;
+	padding: 25px;
+}
+h3{
+	font-size: 25px;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+}
+.im1,.im2{
+	width: 50%;
+	display: inline-block;
+}
+.li{
+	font-size: 27px;
+	text-align: center;
+	font-family: "Caveat", cursive;
+}
+h1,h2,h3,nav,main,aside,footer{
+	text-transform: lowercase;
+}
+@media only screen and (max-width:800px){
+	nav,main,aside,footer{
+		width: 100%;
+	}
+}
+@media only screen and (max-width:800px){
+    article{
+		width: 90%;
+	}
+}
+@media only screen and (max-width:800px){
+    iframe{
+		width: 90%;
+	}
+}
+a{
+	text-decoration: none;
+}
+
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+/* CSS butone */
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
